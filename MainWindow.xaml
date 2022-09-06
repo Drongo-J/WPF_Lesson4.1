@@ -1,0 +1,157 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Button Width="60" Height="60" Content="-" FontSize="50" Click="down_click">
+            
+        </Button>
+        <ProgressBar Grid.Row="0" Grid.Column="1" Height="55" Name="prgbar" Margin="50"
+                     Background="LightGray" Foreground="Green"
+                     Minimum="0" Maximum="100" Value="0"
+                     >
+        </ProgressBar>
+        <Button Grid.Column="2" Width="60" Height="60" Content="+" FontSize="50" Click="up_click">
+
+        </Button>-->
+
+        <!--<TabControl>
+            <TabItem Header="Home" 
+                     Padding="15"
+                     FontSize="22" 
+                     FontFamily="Georgia"
+                     FontWeight="ExtraBlack" 
+                     Background="DeepPink">
+                <Grid Background="DeepPink"> 
+                    <TextBlock>
+                        Salam Home
+                    </TextBlock>    
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="About" 
+                     Padding="15"
+                     FontSize="22" 
+                     FontFamily="Georgia"
+                     FontWeight="ExtraBlack" 
+                     Background="Orange">
+                <Grid Background="Orange">
+                    <TextBlock>
+                        Salam About
+                    </TextBlock>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="News" 
+                     Padding="15"
+                     FontSize="22" 
+                     FontFamily="Georgia"
+                     FontWeight="ExtraBlack" 
+                     Background="SpringGreen">
+                <Grid Background="SpringGreen">
+                    <TextBlock>
+                        Salam News
+                    </TextBlock>
+                </Grid>
+            </TabItem>
+        </TabControl>-->
+
+        <!--<ListBox Name="listbox"
+                 Background="Bisque"
+                 FontSize="30" 
+                 FontWeight="ExtraBlack">
+            <sys:DateTime>2/15/20</sys:DateTime>
+            <sys:DateTime>5/1/20</sys:DateTime>
+            <sys:DateTime>7/21/20</sys:DateTime>
+        </ListBox>-->
+
+        <!--<ListBox
+            Name ="listbox"
+            Background="MidnightBlue"
+            Foreground="White"
+            FontSize="35"
+            FontWeight="ExtraBold"
+            SelectionChanged="listbox_SelectionChanged"
+            ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel>
+                        
+                    </WrapPanel>    
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>-->
+
+        <!--<DataGrid x:Name="mydatagrid">
+            
+        </DataGrid>-->
+
+
+        <!--<ComboBox Height="50" Width="300">
+            <ComboBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel>
+                        
+                    </VirtualizingStackPanel>
+                </ItemsPanelTemplate>
+            </ComboBox.ItemsPanel>
+            <Button>Button 1</Button>
+            <RadioButton>Radio Button 1</RadioButton>
+            <Button>Button 2</Button>
+        </ComboBox>-->
+        <ComboBox  Height="50" 
+                   Width="300" 
+                   Margin="20" 
+                   Name="combobox"
+                   SelectionChanged="combobox_SelectionChanged">
+            <ComboBoxItem Background="Gold">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/mario.png" Width="100" Height="100"></Image>
+                    <TextBlock Text="Super Mario" TextAlignment="Center" VerticalAlignment="Center" Width="200"
+                               FontSize="28"></TextBlock>
+                    <Button Width="100" Margin="15" Content="Mario"></Button>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Gold">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/mario.png" Width="100" Height="100"></Image>
+                    <TextBlock Text="Super Mario" TextAlignment="Center" VerticalAlignment="Center" Width="200"
+                               FontSize="28"></TextBlock>
+                    <Button Width="100" Margin="15" Content="Mario"></Button>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Gold">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/mario.png" Width="100" Height="100"></Image>
+                    <TextBlock Text="Super Mario" TextAlignment="Center" VerticalAlignment="Center" Width="200"
+                               FontSize="28"></TextBlock>
+                    <Button Width="100" Margin="15" Content="Mario"></Button>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="Gold">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/mario.png" Width="100" Height="100"></Image>
+                    <TextBlock Text="Super Mario" TextAlignment="Center" VerticalAlignment="Center" Width="200"
+                               FontSize="28"></TextBlock>
+                    <Button Width="100" Margin="15" Content="Mario"></Button>
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>
